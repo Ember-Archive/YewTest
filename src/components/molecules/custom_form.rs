@@ -5,9 +5,9 @@ use crate::components::atoms::custom_button::CustomButton;
 #[function_component(CustomForm)]
 pub fn custom_form() -> Html {
     html! {
-        <div>
+        <form>
             <TextInput name="username" />
             <CustomButton label="Submit" />
-        </div>
+        </form>
     }
 }
