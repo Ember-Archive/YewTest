@@ -875,5 +875,8 @@ dependencies = [
 name = "yewtest"
 version = "0.1.0"
 dependencies = [
+ "gloo",
+ "serde",
+ "serde_json",
  "yew",
 ]
