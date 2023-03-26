@@ -3,13 +3,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yew Test</title>
+    <style>
+        html, body {
+            background-color: black;
+            color: white;
+        }
+    </style>
 
-<link rel="preload" href="/yewtest-418e1fab4c8b472f_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/yewtest-418e1fab4c8b472f.js"></head>
+<link rel="preload" href="/yewtest-b95c2a6bea8de096_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/yewtest-b95c2a6bea8de096.js"></head>
 <body>
     
 
-<script type="module">import init from '/yewtest-418e1fab4c8b472f.js';init('/yewtest-418e1fab4c8b472f_bg.wasm');</script><script>(function () {
+<script type="module">import init from '/yewtest-b95c2a6bea8de096.js';init('/yewtest-b95c2a6bea8de096_bg.wasm');</script><script>(function () {
     var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     var url = protocol + '//' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;
