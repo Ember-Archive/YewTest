@@ -5,7 +5,7 @@ const STYLESOURCE: &str = include_str!("main.css");
 
 #[styled_component(App)]
 pub fn app() -> Html {
-    let stylesheet = Style::new(STYLESOURCE).unwrap();
+    let stylesheet: Style = Style::new(STYLESOURCE).unwrap();
 
     html! {
         <div class={stylesheet}>
