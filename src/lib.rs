@@ -1,23 +1,24 @@
-use gloo::console::log;
 use yew::prelude::*;
+use stylist::{yew::styled_component, style, Style};
 
-
-
-#[function_component(App)]
+#[styled_component(App)]
 pub fn app() -> Html {
-    
-    let tasks: Vec<&str> = vec!["clean room", "grocery shopping", "write Rust"];
+    let stylesheet: Style = style!(
+        r#"
+            h1 {
+                color: yellow;
+            }
+
+            p {
+                color: white;
+            }
+        "#
+    ).unwrap();
 
     html! {
-        <>
+        <div class={stylesheet}>
             <h1>{ "Hello World!" }</h1>
-            <ul>
-                {list_to_html(tasks)}
-            </ul>
-        </>
+            <p>{ "Yew is cool" }</p>
+        </div>
     }
-}
-
-fn list_to_html(list: Vec<&str>) -> Vec<Html> {
-    list.iter().map(|task| html!{<li>{task}</li>}).collect()
 }
